@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CalculatorUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Sqq-sn-Rl8">
+                                <rect key="frame" x="24" y="68" width="366" height="744.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="NU9-uZ-r0Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="231"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3T-1r-w1N" customClass="PrimaryLabel" customModule="CalculatorUI" customModuleProvider="target">
+                                                <rect key="frame" x="117.5" y="0.0" width="131.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXD-1J-MEb">
+                                                <rect key="frame" x="0.0" y="52" width="366" height="179"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7hr-Fh-eWS">
+                                                        <rect key="frame" x="20.5" y="54" width="329.5" height="109"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="322/10" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysC-2Z-ofe" customClass="SecondaryLabel" customModule="CalculatorUI" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="329.5" height="29"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32.2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8HX-pr-Dmm" customClass="PrimaryLabel" customModule="CalculatorUI" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="37" width="329.5" height="72"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="7hr-Fh-eWS" secondAttribute="bottom" constant="16" id="Skd-xN-Ddt"/>
+                                                    <constraint firstItem="7hr-Fh-eWS" firstAttribute="width" secondItem="zXD-1J-MEb" secondAttribute="width" multiplier="0.9" id="lBJ-dr-x7F"/>
+                                                    <constraint firstAttribute="trailing" secondItem="7hr-Fh-eWS" secondAttribute="trailing" constant="16" id="vYF-ec-VNa"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="zXD-1J-MEb" firstAttribute="width" secondItem="NU9-uZ-r0Q" secondAttribute="width" id="4VB-NI-tfT"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="aiY-UI-Znn">
+                                        <rect key="frame" x="0.0" y="279" width="366" height="465.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Mwk-H9-RfZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="465.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBA-ga-u53" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="GBA-ga-u53" secondAttribute="height" multiplier="1:1" id="Zjw-a3-sqF"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="C"/>
+                                                        <connections>
+                                                            <action selector="clearButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aKY-cZ-mYK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbk-dU-VJQ" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="99.5" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hbk-dU-VJQ" secondAttribute="height" multiplier="1:1" id="IIb-RS-3qd"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="7"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8aH-b6-T1h"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mh-J3-hf7" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="199" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="7Mh-J3-hf7" secondAttribute="height" multiplier="1:1" id="DSC-Qj-TH1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="4"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sKM-iN-MF4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsp-Z0-wNN" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="298.5" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Wsp-Z0-wNN" secondAttribute="height" multiplier="1:1" id="dH4-wy-tlj"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                        <state key="normal" title="1"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MdJ-5A-D1j"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LW2-2V-5EZ" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="398" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LW2-2V-5EZ" secondAttribute="height" multiplier="1:1" id="mIt-Dy-PIn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="0"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bq8-16-lcy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="oML-ve-PSd">
+                                                <rect key="frame" x="99.5" y="0.0" width="67.5" height="465.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-jl-sJH" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="SOy-jl-sJH" secondAttribute="height" multiplier="1:1" id="fQc-8z-TfY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="%"/>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xO-KM-PRZ" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="99.5" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="7xO-KM-PRZ" secondAttribute="height" multiplier="1:1" id="CQK-qx-LJA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="8"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L9L-9e-FLv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chv-kK-LCA" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="199" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Chv-kK-LCA" secondAttribute="height" multiplier="1:1" id="VQj-m5-U63"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="5"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="996-Uv-vLl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emz-Up-vyv" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="298.5" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Emz-Up-vyv" secondAttribute="height" multiplier="1:1" id="FNP-U8-mz2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="2"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xn5-Wo-7f4"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EbP-ev-ZE0" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="398" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="EbP-ev-ZE0" secondAttribute="height" multiplier="1:1" id="xsk-Cc-Ep6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="."/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fhX-lL-lai"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="VCA-Ho-GfB">
+                                                <rect key="frame" x="199" y="0.0" width="67.5" height="465.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ZO-nx-ihI" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="2ZO-nx-ihI" secondAttribute="height" multiplier="1:1" id="BIz-3X-VDA"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <inset key="titleEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="√"/>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52F-MW-bkb" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="99.5" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="52F-MW-bkb" secondAttribute="height" multiplier="1:1" id="cVf-iR-wWb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="9"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YBf-Fy-glK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzU-lH-fi1" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="199" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zzU-lH-fi1" secondAttribute="height" multiplier="1:1" id="pcE-3n-7Gb"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="6"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rn7-Pl-Cky"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ute-uf-hMC" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="298.5" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Ute-uf-hMC" secondAttribute="height" multiplier="1:1" id="UAz-34-c3a"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="3"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MaC-gf-vgb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNW-Oa-jIc" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="398" width="67.5" height="67.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="VNW-Oa-jIc" secondAttribute="height" multiplier="1:1" id="oGl-IE-7X1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="="/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y7A-4m-8dE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="0qU-ZZ-weg">
+                                                <rect key="frame" x="298.5" y="0.0" width="67.5" height="465.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="V81-CM-uTr">
+                                                        <rect key="frame" x="0.0" y="0.0" width="67.5" height="266.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8I-LB-Nl1" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="67.5" height="67.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="E8I-LB-Nl1" secondAttribute="height" multiplier="1:1" id="Bek-FX-cjC"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="÷"/>
+                                                                <connections>
+                                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="luG-vL-Rcm"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgI-ik-5Ta" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="99.5" width="67.5" height="67.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="TgI-ik-5Ta" secondAttribute="height" multiplier="1:1" id="VR2-7o-TOZ"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                                <state key="normal" title="X"/>
+                                                                <connections>
+                                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KQ9-0J-jfe"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMc-O7-A4A" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="199" width="67.5" height="67.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="TMc-O7-A4A" secondAttribute="height" multiplier="1:1" id="zks-z5-6mI"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                                <state key="normal" title="-"/>
+                                                                <connections>
+                                                                    <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QvP-Ie-7rQ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyy-PD-wOc" customClass="Button" customModule="CalculatorUI" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="298.5" width="67.5" height="167"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="+"/>
+                                                        <connections>
+                                                            <action selector="ButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BpP-v8-RG1"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aiY-UI-Znn" firstAttribute="width" secondItem="Sqq-sn-Rl8" secondAttribute="width" id="xDV-DM-SFe"/>
+                                    <constraint firstItem="NU9-uZ-r0Q" firstAttribute="width" secondItem="Sqq-sn-Rl8" secondAttribute="width" id="y19-w6-aGY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sqq-sn-Rl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="U2h-ff-lJp"/>
+                            <constraint firstItem="Sqq-sn-Rl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="ecX-tV-pvX"/>
+                            <constraint firstItem="zXD-1J-MEb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="ehJ-05-Jfg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sqq-sn-Rl8" secondAttribute="trailing" constant="24" id="zdm-9A-Xkd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabel" destination="ysC-2Z-ofe" id="kjj-Zx-m3g"/>
+                        <outlet property="displayView" destination="zXD-1J-MEb" id="Dkp-YA-fDj"/>
+                        <outlet property="numberLabel" destination="8HX-pr-Dmm" id="VXu-Y4-R5B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
